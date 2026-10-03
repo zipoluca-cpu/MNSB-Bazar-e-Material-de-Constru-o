@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="MNSB Bazar e Material de Construção em Santíssimo, Rio de Janeiro. Consulte produtos e solicite seu orçamento pelo WhatsApp.">
+
+    <meta name="theme-color" content="#e87924">
+    <title>MNSB | Bazar e Material de Construção</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra-superior">
+        <div class="container barra-conteudo">
+            <span>Materiais para sua obra e reforma</span>
+            <span>Segunda a sábado e domingo pela manhã</span>
+        </div>
+    </div>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+
+            <a class="logo" href="#inicio" aria-label="MNSB - Página inicial">
+                <span class="logo-icone">M</span>
+                <span class="logo-texto">
+                    <strong>MNSB</strong>
+                    <small>BAZAR E CONSTRUÇÃO</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menuPrincipal">
+                ☰
+            </button>
+
+            <nav class="menu" id="menuPrincipal">
+                <a href="#inicio">Início</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <a class="botao botao-header"
+               href="#orcamento">
+                Solicitar orçamento
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-texto">
+                    <span class="selo">MNSB • SANTÍSSIMO</span>
+
+                    <h1>
+                        Tudo para sua obra
+                        <span>em um só lugar.</span>
+                    </h1>
+
+                    <p>
+                        Está construindo ou reformando?
+                        Consulte nossa loja, encontre o que precisa
+                        e peça seu orçamento pelo WhatsApp.
+                    </p>
+
+                    <div class="hero-botoes">
+                        <a href="#categorias" class="botao">
+                            Explorar categorias
+                        </a>
+
+                        <a href="#localizacao"
+                           class="botao botao-outline">
+                            Como chegar
+                        </a>
+                    </div>
+
+                    <div class="hero-destaques">
+                        <div>
+                            <strong>01</strong>
+                            <span>Consulte produtos</span>
+                        </div>
+                        <div>
+                            <strong>02</strong>
+                            <span>Peça seu orçamento</span>
+                        </div>
+                        <div>
+                            <strong>03</strong>
+                            <span>Fale com a loja</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-painel">
+                    <div class="painel-simbolo">MNSB</div>
+                    <div class="painel-linha"></div>
+                    <p>Construindo ideias.<br>Realizando projetos.</p>
+                    <span class="painel-icone">⌂</span>
+                    <small>BAZAR E MATERIAL DE CONSTRUÇÃO</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="faixa-info">
+            <div class="container faixa-grid">
+                <article>
+                    <span class="info-icone">⌕</span>
+                    <div>
+                        <h3>Consulte a loja</h3>
+                        <p>Tire dúvidas sobre os produtos.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="info-icone">R$</span>
+                    <div>
+                        <h3>Peça seu orçamento</h3>
+                        <p>Solicite preços pelo WhatsApp.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="info-icone">⌖</span>
+                    <div>
+                        <h3>Estamos em Santíssimo</h3>
+                        <p>Consulte a rota no mapa.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="categorias">
+            <div class="container">
+                <div class="titulo-secao">
+                    <div>
+                        <span class="selo">ENCONTRE O QUE PRECISA</span>
+                        <h2>Categorias de produtos</h2>
+                        <p>
+                            Explore as categorias e consulte a
+                            disponibilidade diretamente com a loja.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="categorias-grid">
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Cimento e argamassa">
+                        <span class="categoria-icone">▰</span>
+                        <strong>Cimento e argamassa</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Tintas e pintura">
+                        <span class="categoria-icone">▥</span>
+                        <strong>Tintas e pintura</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Ferramentas">
+                        <span class="categoria-icone">⚒</span>
+                        <strong>Ferramentas</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Material hidráulico">
+                        <span class="categoria-icone">♧</span>
+                        <strong>Material hidráulico</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Material elétrico">
+                        <span class="categoria-icone">ϟ</span>
+                        <strong>Material elétrico</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+
+                    <button class="categoria"
+                            type="button"
+                            data-categoria="Bazar e utilidades">
+                        <span class="categoria-icone">▦</span>
+                        <strong>Bazar e utilidades</strong>
+                        <span>Consultar produtos →</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-cinza" id="produtos">
+            <div class="container">
+                <div class="titulo-secao">
+                    <div>
+                        <span class="selo">CONSULTA RÁPIDA</span>
+                        <h2>O que você procura?</h2>
+                        <p>
+                            Pesquise um produto ou escolha uma
+                            categoria para pedir informações.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pesquisa">
+                    <label for="buscaProduto">Pesquisar produto</label>
+                    <div class="pesquisa-linha">
+                        <input
+                            type="search"
+                            id="buscaProduto"
+                            placeholder="Ex.: tinta, cimento, torneira..."
+                            autocomplete="off">
+
+                        <button class="botao"
+                                type="button"
+                                id="limparBusca">
+                            Limpar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="produtos-grid" id="listaProdutos">
+                    <article class="produto"
+                             data-nome="cimento argamassa">
+                        <div class="produto-visual visual-cimento">
+                            <span>OBRA</span>
+                            <strong>01</strong>
+                        </div>
+                        <div class="produto-info">
+                            <small>CONSTRUÇÃO</small>
+                            <h3>Cimento e argamassa</h3>
+                            <p>Consulte marcas, tamanhos e disponibilidade.</p>
+                            <button class="link-orcamento"
+                                    data-produto="Cimento e argamassa">
+                                Consultar pelo WhatsApp →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto"
+                             data-nome="tinta pintura pincel rolo">
+                        <div class="produto-visual visual-tinta">
+                            <span>PINTURA</span>
+                            <strong>02</strong>
+                        </div>
+                        <div class="produto-info">
+                            <small>ACABAMENTO</small>
+                            <h3>Tintas e pintura</h3>
+                            <p>Consulte cores, embalagens e acessórios.</p>
+                            <button class="link-orcamento"
+                                    data-produto="Tintas e pintura">
+                                Consultar pelo WhatsApp →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto"
+                             data-nome="ferramentas martelo alicate chave">
+                        <div class="produto-visual visual-ferramenta">
+                            <span>FERRAMENTAS</span>
+                            <strong>03</strong>
+                        </div>
+                        <div class="produto-info">
+                            <small>MANUTENÇÃO</small>
+                            <h3>Ferramentas</h3>
+                            <p>Consulte ferramentas e acessórios disponíveis.</p>
+                            <button class="link-orcamento"
+                                    data-produto="Ferramentas">
+                                Consultar pelo WhatsApp →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto"
+                             data-nome="hidráulica cano tubo torneira conexão">
+                        <div class="produto-visual visual-hidraulica">
+                            <span>HIDRÁULICA</span>
+                            <strong>04</strong>
+                        </div>
+                        <div class="produto-info">
+                            <small>INSTALAÇÃO</small>
+                            <h3>Material hidráulico</h3>
+                            <p>Consulte tubos, conexões e outros itens.</p>
+                            <button class="link-orcamento"
+                                    data-produto="Material hidráulico">
+                                Consultar pelo WhatsApp →
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <p id="semResultados" class="sem-resultados" hidden>
+                    Nenhuma categoria encontrada. Tente outro termo.
+                </p>
+
+                <p class="aviso-catalogo">
+                    Catálogo demonstrativo: confirme os produtos,
+                    preços e disponibilidade com a loja.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao" id="orcamento">
+            <div class="container orcamento-grid">
+                <div class="orcamento-texto">
+                    <span class="selo">FALE COM A MNSB</span>
+                    <h2>Vamos tirar seu projeto do papel?</h2>
+                    <p>
+                        Informe o que você precisa e envie sua
+                        solicitação pelo WhatsApp da loja.
+                    </p>
+
+                    <ul class="lista-vantagens">
+                        <li>✓ Informe os produtos desejados.</li>
+                        <li>✓ Informe a quantidade aproximada.</li>
+                        <li>✓ Consulte preços e disponibilidade.</li>
+                    </ul>
+                </div>
+
+                <form id="formOrcamento" class="form-orcamento">
+                    <h3>Solicitar orçamento</h3>
+
+                    <label for="nomeCliente">Nome</label>
+                    <input
+                        id="nomeCliente"
+                        name="nome"
+                        type="text"
+                        placeholder="Seu nome"
+                        maxlength="80"
+                        required>
+
+                    <label for="produtoCliente">Produto desejado</label>
+                    <input
+                        id="produtoCliente"
+                        name="produto"
+                        type="text"
+                        placeholder="Ex.: tinta para parede"
+                        maxlength="150"
+                        required>
+
+                    <label for="quantidade">Quantidade aproximada</label>
+                    <input
+                        id="quantidade"
+                        name="quantidade"
+                        type="text"
+                        placeholder="Ex.: 3 unidades ou 10 sacos"
+                        maxlength="100"
+                        required>
+
+                    <label for="detalhes">Detalhes adicionais</label>
+                    <textarea
+                        id="detalhes"
+                        name="detalhes"
+                        rows="3"
+                        maxlength="500"
+                        placeholder="Marca, medida ou outra informação (opcional)"></textarea>
+
+                    <button type="submit" class="botao botao-enviar">
+                        Enviar pedido pelo WhatsApp
+                    </button>
+
+                    <p class="form-nota">
+                        O envio abrirá o WhatsApp para você revisar
+                        e enviar a mensagem.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <section class="secao secao-cinza" id="sobre">
+            <div class="container sobre-grid">
+                <div class="sobre-marca">
+                    <span class="sobre-letra">MNSB</span>
+                    <span>BAZAR E MATERIAL DE CONSTRUÇÃO</span>
+                </div>
+
+                <div class="sobre-texto">
+                    <span class="selo">CONHEÇA A LOJA</span>
+                    <h2>MNSB Bazar e Material de Construção</h2>
+                    <p>
+                        Uma opção em Santíssimo para quem está
+                        procurando materiais para construir, reformar
+                        ou cuidar da casa.
+                    </p>
+                    <p>
+                        Consulte a equipe sobre produtos, preços,
+                        disponibilidade e condições de atendimento.
+                    </p>
+                    <a href="#orcamento" class="botao">
+                        Consultar a loja
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="localizacao">
+            <div class="container">
+                <div class="titulo-secao">
+                    <div>
+                        <span class="selo">VENHA NOS VISITAR</span>
+                        <h2>Onde estamos</h2>
+                        <p>Consulte a localização e planeje sua visita.</p>
+                    </div>
+                </div>
+
+                <div class="localizacao-grid">
+                    <div class="localizacao-info">
+                        <div class="localizacao-item">
+                            <span>⌖</span>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>
+                                    Rua Major Brigadeiro Lysias Rodrigues,
+                                    460, loja, Santíssimo, Rio de Janeiro - RJ
+                                </p>
+                                <p>CEP: 23093-060</p>
+                            </div>
+                        </div>
+
+                        <div class="localizacao-item">
+                            <span>☎</span>
+                            <div>
+                                <h3>Telefone / WhatsApp</h3>
+                                <p>(21) 96488-3188</p>
+                            </div>
+                        </div>
+
+                        <div class="localizacao-item">
+                            <span>◷</span>
+                            <div>
+                                <h3>Horário publicado</h3>
+                                <p>Segunda a sexta: 08h–18h</p>
+                                <p>Sábado: 08h–15h</p>
+                                <p>Domingo: 08h–13h</p>
+                            </div>
+                        </div>
+
+                        <a
+                            class="botao"
+                            href="https://www.google.com/maps/search/?api=1&query=Rua+Major+Brigadeiro+Lysias+Rodrigues+460+Santissimo+Rio+de+Janeiro"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Abrir rota no Google Maps
+                        </a>
+
+                        <p class="aviso-catalogo">
+                            Confirme endereço e horários antes de publicar.
+                        </p>
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            title="Mapa da MNSB em Santíssimo"
+                            src="https://maps.google.com/maps?q=Rua%20Major%20Brigadeiro%20Lysias%20Rodrigues%20460%20Santissimo%20Rio%20de%20Janeiro&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <a class="logo logo-rodape" href="#inicio">
+                <span class="logo-icone">M</span>
+                <span class="logo-texto">
+                    <strong>MNSB</strong>
+                    <small>BAZAR E CONSTRUÇÃO</small>
+                </span>
+            </a>
+
+            <p>Seu projeto começa aqui.</p>
+
+            <p>
+                © <span id="anoAtual"></span> MNSB.
+                Site demonstrativo.
+            </p>
+        </div>
+    </footer>
+
+    <a
+        class="whatsapp-flutuante"
+        href="https://wa.me/5521964883188"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com a MNSB pelo WhatsApp">
+        WhatsApp ↗
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
